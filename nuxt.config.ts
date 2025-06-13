@@ -2,5 +2,11 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxt/icon', '@nuxt/image']
+  srcDir: 'src/' ,
+  modules: ['@nuxt/icon', '@nuxt/image', '@nuxtjs/tailwindcss'],
+  tailwindcss: {
+    // exposeConfig: true,
+    // viewer: true,  
+    // and more...
+  }
 })
